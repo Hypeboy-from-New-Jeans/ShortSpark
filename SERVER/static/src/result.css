@@ -1,0 +1,27 @@
+body {
+    font-family: 'Poppins', 'Sunflower', 'Open Sans', sans-serif;
+}
+
+#loading {
+    transform: scale(5);
+    display: none;
+    border-style: dashed !important;
+    background-color: #FDF4F5 !important;
+}
+#loading.visible {
+    display: block;
+}
+
+.image-thumbnail {
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    transition: 0.2s ease-in-out !important;
+}
+button:hover {
+    transform: scale(1.1);
+}
