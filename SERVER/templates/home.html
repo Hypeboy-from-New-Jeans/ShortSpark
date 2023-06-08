@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+        <!-- Icon -->
+        <script src="https://kit.fontawesome.com/0b28a169cc.js" crossorigin="anonymous"></script>
+
+        <link href="{{url_for('static', filename='src/main.css')}}" rel="stylesheet">
+        <title>[ShortSpark] Some Spark to Youtube Channel</title>
+    </head>
+    <body>
+        <main class="container my-5 py-3 shadow-lg rounded position-relative">
+            <div class="row mt-3">
+                <p class="py-1 my-0 text-center fs-3 fw-semibold"><i class="fa-brands fa-youtube" style="color: #66347f;"></i> ShortSpark  <i class="fa-solid fa-wand-magic-sparkles fa-beat" style="color: #FFB84C;"></i></p>
+            </div>
+            <div class="row">
+                <p class="my-0 text-center fs-7 fw-light">Creativity and Inspiration for YouTube Shorts Making</p>
+            </div>
+            <div class="row text-center p-3 my-3 justify-content-center">
+                <div class="col"></div>
+                <div class="col-9 shadow rounded bg-body mx-1 my-3 py-3 bg-info">
+                    <form class="row needs-validation justify-content-center" novalidate>
+                        <section class="row my-5 justify-content-center">
+                            <div class="col"></div>
+                            <div class="col-8 position-relative">
+                                <label for="shorts-url-input" class="visually-hidden">Input URL</label>
+                                <input type="url" class="form-control text-center fs-5" id="shorts-url-input" placeholder="Your Youtube Shorts URL here!" pattern="http://www.youtube.com/shorts/(.+)|https://www.youtube.com/shorts/(.+)" required>
+                                <div class="invalid-tooltip">
+                                    Please copy your Youtube Shorts URL
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </section>
+                        <section class="row justify-content-center my-3">
+                            <div class="col"></div>
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-primary mb-3 fs-5" id="submit-btn">Submit</button>
+                            </div>
+                            <div class="col"></div>
+                        </section>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row mx-3 mb-5">
+                <div class="col"></div>
+                <div class="col-3 mx-4">
+                    <div class="row">
+                        <p class="py-1 my-0 text-center fs-3"><i class="fa-solid fa-flag-checkered fa-lg" style="color: #6981ab;"></i></p>
+                    </div>
+                    <div class="row text-wrap text-center">Generate captivating YouTube Shorts recommendations effortlessly on our website. Simply paste your YouTube Shorts link, click submit, and our web server will seamlessly extract key frames and captions using a YouTube Shorts-aware video captioning model.</div>
+                </div>
+                <div class="col-3 mx-4">
+                    <div class="row">
+                        <p class="py-1 my-0 text-center fs-3"><i class="fa-solid fa-fire fa-lg" style="color: #c25a47;"></i></p>
+                    </div>
+                    <div class="row text-wrap text-center">After analyzing your YouTube Shorts, our advanced algorithm generates three attention-grabbing titles based on the extracted captions. These titles engage viewers and optimize your content's discoverability, boosting its appeal.</div>
+                </div>
+                <div class="col-3 mx-4">
+                    <div class="row">
+                        <p class="py-1 my-0 text-center fs-3"><i class="fa-solid fa-money-bill-trend-up fa-lg" style="color: #52a773;"></i></p>
+                    </div>
+                    <div class="row text-wrap text-center">Alongside title recommendations, our website offers visually appealing key frames extracted from your video. These carefully selected thumbnails maximize click-through rates, enticing viewers to watch your YouTube Shorts. Leverage our recommendations to increase your earnings and maximize content monetization.</div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <p class="my-3 text-center fs-6 fw-light">TEAM 뉴진스의하입보이요 @ SKKU S.E.L.F</p>
+            </div>
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <section class="container bg-warning rounded border border-1 border-dark" id="loading">
+                    <div class="row pt-4 pb-3 text-center">
+<!--                        <i class="fa-solid fa-gear fa-spin fa-2xl"></i>-->
+<!--                        <i class="fa-solid fa-compact-disc fa-spin fa-2xl" style="color: #D14D72;"></i>-->
+                        <i class="fa-solid fa-circle-radiation fa-spin fa-2xl" style="color: #D14D72;"></i>
+<!--                        <i class="fa-regular fa-compass fa-spin fa-2xl" style="color: #374259;"></i>-->
+                    </div>
+                    <div class="row" style="transform: scale(0.5)">
+                        <p class="m-0 mt-1 text-center fw-semibold">Let me think...</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="{{url_for('static', filename='src/main.js')}}"></script>
+    </body>
+</html>
